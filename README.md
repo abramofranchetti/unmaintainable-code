@@ -13,14 +13,14 @@
 
 > _Non ascrivere mai alla malizia, quello che può essere spiegato con l'incompetenza._ - Napoleone
 
-In the interests of creating employment opportunities in the Java programming field, I am passing on these tips from the masters on how to write code that is so difficult to maintain, that the people who come after you will take years to make even the simplest changes. Further, if you follow all these rules religiously, you will even guarantee **yourself** a lifetime of employment, since no one but you has a hope in hell of maintaining the code. Then again, if you followed **all** these rules religiously, even you wouldn't be able to maintain the code!
+Con l'intento di creare opportunità d'impiego nel campo della programmazione Java, sto tramandando questi consigli da maestro su come scrivere del codice ceh sia così difficile da manutenere, che le persone che verranno dopo di te ci metteranno anni per effettuare anche i più piccoli cambiamenti. Inoltre, se seguirai queste norme religiosamente, garantirari a **te stesso** un impiego vita natural durante, dato che nessuno oltre a te avrà speranze di successo nell'infernale lavoro di manutere il tuo codice. Inoltre, se seguirai religiosamente **tutte** queste regole, nemmeno tu stesso sarai più in grado di manutenere il tuo stesso codice!
 
-You don't want to overdo this. Your code should not **look** hopelessly unmaintainable, just **be** that way. Otherwise it stands the risk of being rewritten or refactored.
+Però non devi strafare. Il tuo codice non deve **sembrare** irrimediabilmente inmanutenibile, deve solo **essere** così. Altrimenti correrà il rischio di essere riscritto o rifattorizzato (_refactored_).
 
-## General Principles
+## Principi Generali
 
 > _Quidquid latine dictum sit, altum sonatur._
-> _- Whatever is said in Latin sounds profound._
+> _- Qualsiasi cosa detta in latino sembra profonda._
 
 To foil the maintenance programmer, you have to understand how he thinks. He has your giant program. He has no time to read it all, much less understand it. He wants to rapidly find the place to make his change, make it and get out and have no unexpected side effects from the change.
 
