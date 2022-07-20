@@ -1,17 +1,17 @@
-# How To Write Unmaintainable Code
+# Come Scrivere Codice Inmanutenibile
 
-## Ensure a job for life ;-)
+## Garantisciti il lavoro a vita ;)
 
 **Roedy Green**
  [**Canadian Mind Products**](http://mindprod.com/jgloss/unmain.html)
 
-<sup>Reproduced [with permission from the author](https://github.com/Droogans/unmaintainable-code/issues/3#issuecomment-235317722), circa 2015</sup>
+<sup>Riprodotto [con il permesso dell'autore](https://github.com/Droogans/unmaintainable-code/issues/3#issuecomment-235317722), circa 2015</sup>
 
 * * *
 
-## Introduction
+## Introduzione
 
-> _Never ascribe to malice, that which can be explained by incompetence._ - Napoleon
+> _Non ascrivere mai alla malizia, quello che può essere spiegato con l'incompetenza._ - Napoleone
 
 In the interests of creating employment opportunities in the Java programming field, I am passing on these tips from the masters on how to write code that is so difficult to maintain, that the people who come after you will take years to make even the simplest changes. Further, if you follow all these rules religiously, you will even guarantee **yourself** a lifetime of employment, since no one but you has a hope in hell of maintaining the code. Then again, if you followed **all** these rules religiously, even you wouldn't be able to maintain the code!
 
