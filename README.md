@@ -1,6 +1,6 @@
 # Come Scrivere Codice Inmanutenibile
 
-## Garantisciti il lavoro a vita ;)
+## Garantisciti un lavoro a vita ;)
 
 **Roedy Green**
  [**Canadian Mind Products**](http://mindprod.com/jgloss/unmain.html)
@@ -22,22 +22,22 @@ Però non devi strafare. Il tuo codice non deve **sembrare** irrimediabilmente i
 > _Quidquid latine dictum sit, altum sonatur._
 > _- Qualsiasi cosa detta in latino sembra profonda._
 
-To foil the maintenance programmer, you have to understand how he thinks. He has your giant program. He has no time to read it all, much less understand it. He wants to rapidly find the place to make his change, make it and get out and have no unexpected side effects from the change.
+Per ingannare il programmatore che dovrà lavorare sul tuo codice, devi innanzitutto capire come pensa. Ha un programma gigantesco da gestire. Non ha tempo di leggerlo tutto, e ancora meno di capirlo. Vuole solo trovare velocemente il punto dove effettuare le sue modifiche, farle e basta e non avere comportamenti imprevisti che derivino dalla sua modifica.
 
-He views your code through a toilet paper tube. He can only see a tiny piece of your program at a time. You want to make sure he can never get at the big picture from doing that. You want to make it as hard as possible for him to find the code he is looking for. But even more important, you want to make it as awkward as possible for him to safely **ignore** anything.
+Lui vede il tuo codice attraverso il tuo di cartone della carta igenica. Può vedere solamente una piccola porzione del tuo programma per volta. Tu vuoi assicurarti che non riesca mai a comprendere il quadro generale. Vuoi rendergli il più complicato possibile trovare il codice che sta cercando. Ma ancora più importante, vuoi rendirgli il più difficile possibile **ignorare** qualcosa con sicurezza.
 
-Programmers are lulled into complacency by conventions. But every once in a while, by subtly violating convention, you force him to read every line of your code with a magnifying glass.
+I programmatori sono cullati dall'autocompiacimento dalle convenzioni. Ma ogni tanto, violando sottilmente le convenzioni, li costringi a leggere ogni riga del tuo codice con una lente d'ingrandimento.
 
-You might get the idea that every language feature makes code unmaintainable -- not so, only if properly misused.
+Protesti farti l'idea che ogni funzionalità del linguaggio renda il codice inmanutenibile -- non è così, lo fanno solo se usate in modo improprio.
 
-## Naming
+## Denominazione delle variabili (_Naming_)
 
-> _"When I use a word," Humpty Dumpty said, in a rather scornful tone, "it means just what I choose it to mean - neither more nor less."_
-> - Lewis Carroll -- Through the Looking Glass, Chapter 6
+> _"Quando uso una parola," disse Humpty Dumpty, in tono piuttosto sprezzante, "significa proprio quello che scelgo che significhi, né più né meno."_
+> - Lewis Carroll -- Attraverso lo specchio e quel che Alice vi trovò (_Through the Looking-glass and what Alice Found There_), Capitolo 6
 
-Much of the skill in writing unmaintainable code is the art of naming variables and methods. They don't matter at all to the compiler. That gives you huge latitude to use them to befuddle the maintenance programmer.
+La maggior parte dell'abilità nel scrivere codice inmanutenibile riguarda l'arte della scelta del nome delle variabili e dei metodi. Questi non importano al compilatore. Ti danno un ampio raggio d'azione per confondere il programmatore che dovrà mettere mano al codice.
 
-#### New Uses For <cite>Names For Baby</cite>
+#### Nuovi usi per <cite>Nomi per bambini</cite>
 
 Buy a copy of a baby naming book and you'll never be at a loss for variable names. Fred is a wonderful name, and easy to type. If you're looking for easy-to-type variable names, try `asdf` or `aoeu` if you type with a DSK keyboard.
 
