@@ -39,39 +39,39 @@ La maggior parte dell'abilità nel scrivere codice inmanutenibile riguarda l'art
 
 #### Nuovi usi per <cite>Nomi per bambini</cite>
 
-Buy a copy of a baby naming book and you'll never be at a loss for variable names. Fred is a wonderful name, and easy to type. If you're looking for easy-to-type variable names, try `asdf` or `aoeu` if you type with a DSK keyboard.
+Compra una copia di un libro di nomi per bambini e non sarai mai più a corto di nomi per le variabili. Fred è un nome meraviglioso, e facile da scrivere. Se stai cercando un nome per una variabile che sia di facile scrittura, prova `asdf` o `aoeu` se stai scrivendo con una tastiera con layout DSK.
 
-#### Single Letter Variable Names
+#### Nomi di variabili con una singola lettera
 
-If you call your variables `a`, `b`, `c`, then it will be impossible to search for instances of them using a simple text editor. Further, nobody will be able to guess what they are for. If anyone even hints at breaking the tradition honoured since FØRTRAN of using `i`, `j`, and `k` for indexing variables, namely replacing them with `ii`, `jj` and `kk`, warn them about what the Spanish Inquisition did to heretics.
+Se chiami le tue variabili `a`, `b`, `c`, allora sarà impossibile cercare le loro occorrenze usanto un semplice editor di testo. Inoltre, nessuno sarà in grado di indovinare a cosa servissero. Se qualcuno accenna anche a infrangere la tradizione onorata da FØRTRAN di usare `i`, `j` e `k` per indicizzare le variabili, vale a dire sostituirle con `ii`, `jj` e `kk`, avvisalo di ciò che l'Inquisizione Spagnola fece agli eretici.
 
-#### Creative Miss-spelling
+#### Errori di ortografia creativi.
 
-If you must use descriptive variable and function names, misspell them. By misspelling in some function and variable names, and spelling it correctly in others (such as `SetPintleOpening` and `SetPintalClosing`) we effectively negate the use of grep or IDE search techniques. It works amazingly well. Add an international flavor by spelling _tory_ or _tori_ in different theatres/theaters.
+Se devi usare nomi di variabili e di funzione parlanti, riempili di errori ortografici. Inserendo qualche errore di ortografia in qualche nome funzione o nome di variabile, e invece scrivendoli correttamente in altri (es: `SetPintleOpening` and `SetPintalClosing`) possiamo impedire efficacemente l'uso di *grep* or altre tecniche di ricerca degli IDE. Funziona in modo incredibilmente efficace. Aggiungi qualche fragranza internazionale per esempio _tory_ o _tori_ oppure theatres/theaters
 
-#### Be Abstract
+#### Sii astratto
 
-In naming functions and variables, make heavy use of abstract words like _it_, _everything_, _data_, _handle_, _stuff_, _do_, _routine_, _perform_ and the digits e.g. `routineX48`, `PerformDataFunction`, `DoIt`, `HandleStuff` and `do_args_method`.
+Nella scelta dei nomi delle funzioni e delle variabili, fa largo uso di parole astratte come _it_, _everything_, _data_, _handle_, _stuff_, _do_, _routine_, _perform_ e mescolaci anche delle cifre es. `routineX48`, `PerformDataFunction`, `DoIt`, `HandleStuff` e `do_args_method`.
 
-#### A.C.R.O.N.Y.M.S.
+#### A.C.R.O.N.I.M.I.
 
-Use acronyms to keep the code terse. Real men never define acronyms; they understand them genetically.
+Usa acronimi per tenere il codice pulito. I veri uomini non definiscono mai gli acronimi, li comprendono geneticamente.
 
-#### Thesaurus Surrogatisation
+#### Surrogazione del thesaurus
 
-To break the boredom, use a thesaurus to look up as much alternate vocabulary as possible to refer to the same action, e.g. _display_, _show_, _present_. Vaguely hint there is some subtle difference, where none exists. However, if there are two similar functions that have a crucial difference, always use the same word in describing both functions (e.g. _print_ to mean "write to a file", "put ink on paper" and "display on the screen"). Under no circumstances, succumb to demands to write a glossary with the special purpose project vocabulary unambiguously defined. Doing so would be an unprofessional breach of the structured design principle of _information hiding_.
+Per rompere la noia, usa un thesaurus per cercare quanti più sinonimi possibili per riferirti alla stessa azione es: _display_, _show_, _present_. Accenna vagamente a qualche sottile differenza, quando non ce n'è nessuna. Comunque, se ci sono 2 funzioni simili che hanno differenze cruciali, usa sempre la stessa parole per descrivere entrambe le funzioni es. _print_ per indicare la "scrivi su file", "stampa su carta" e "visualizza a schermo"). Sotto nessuna circostanza, soccombi alle richieste di scrivere un glossario con lo scopo specifico scopo di disambiguare il vocabolario del progetto. Questo sarebbe una falla altamente poco professionale del princio di design della _information hiding_.
 
-#### Use Plural Forms From Other Languages
+#### Usa Forme Plurali Da Altre Lingue.
 
-A VMS script kept track of the "statii" returned from various "Vaxen". Esperanto , [Klingon](http://www.kli.org/) and Hobbitese qualify as languages for these purposes. For pseudo-Esperanto pluraloj, add oj. You will be doing your part toward world peace.
+Uno script VMS tiene traccia dei vari "statii" ritornati da varie "Vaxen". Esperanto , [Klingon](http://www.kli.org/) e la lingua degli Hobbit sono tutte lingue valide per questi scopi. Per il pseudo-Esperanto pluraloj, add oj. Stai facendo la tua parte per la pace nel mondo.
 
-#### CapiTaliSaTion
+#### CapiTaliZzaZione
 
-Randomly capitalize the first letter of a syllable in the middle of a word. For example `ComputeRasterHistoGram()`.
+Capitalizza in modo random le prime lettere di ogni sillaba in mezzo alle parole. Per esempio `ComputeRasterHistoGram()`.
 
-#### Reuse Names
+#### Riusa i Nomi
 
-Wherever the rules of the language permit, give classes, constructors, methods, member variables, parameters and local variables the same names. For extra points, reuse local variable names inside `{}` blocks. The goal is to force the maintenance programmer to carefully examine the scope of every instance. In particular, in Java, make ordinary methods masquerade as constructors.
+Ogni volta che le regole del linguaggio lo permettono, dai alle classi, ai costruttori, ai metod, ai nome dei campi, i parametri e le variabili locali gli stessi nomi. Per ottenere punti extra, riusa i nomi di variabili locali all'interno di blocchi `{}`. Lo scopo è di obbligare il manutentore ad esaminare attentamente lo scope di ogni istanza, In particolare, in Java, maschera i metodi ordinari da costruttori.
 
 #### Åccented Letters
 

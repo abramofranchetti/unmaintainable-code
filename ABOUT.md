@@ -1,13 +1,13 @@
-## About this article
+## Riguardo questo articolo
 
-This article was not written by me — I just found it funny and useful to show others how not to do things, which is easier sometimes than showing them what *to* do.
+Questo articolo non è stato scritto da me - Io l'ho trovato divertente e utile per mostrare agli altri come *non* fare le cose, che è di solito più facile di mostrare *come* farle.
 
-## Improvements to this Article
+## Miglioramenti a questo articolo
 
-A lot of the *specific* exploits shown in this article have been fixed in newer versions of the language or platform that they were written against when this was originally authored. That being said, my intention is not to address the validity of any of these specific approaches. The humor is in the general idea of abusing a language or platform, not that you can still feasibly do it in the exact same way that is written here.
+Molti degli exploits *specifici* mostrati in questo articolo sono stati fixati in nuove versioni dei linguaggi o delle piattaforme nelle quali erano scritti quando questo articolo fu originariamente scritto. Questo è triste, ma non ho intenzione di indagare la validà di nessuno di questi approcci. La parte divertente è nell'idea generale di abusare di un linguaggio o di una piattaforma, non che si possa farlo nella identica maniera nella quale è stata mostrata qui.
 
 ## Pull Requests
 
-I'm not going to update this for new tools and systems. Writing unmaintainable `make` files could easily be enhanced with plenty of techniques to write slow, ugly, and buggy `grunt` tasks, but this is here to serve as an easy to search version of the original. If you'd like to do that, fork this and start over. I have been told by the original author that *they are only interested in that you credit the original work, and link to it in your version*.
+Non aggiornerò questo articolo per nuovi tools o nuovi sistemi. La scrittura di file `make` non mantenibili potrebbe essere facilmente migliorata con un sacco di tecniche per scrivere compiti` grunt` lenti, brutti e buggati, ma questo scritto è qui per servire come una versione facile da cercare dell'originale. Se vuoi farlo, biforca questo e ricomincia da capo. Mi è stato detto dall'autore originale che *è interessato solo al fatto che tu accrediti l'opera originale e metti un riferimento ad essa nella tua versione *.
 
-I will accept pull requests that make the original article easier to read using markdown. This includes general formatting and typo fixes.
+Accetterò richieste pull che rendono l'articolo originale più facile da leggere usando markdown. Ciò include la formattazione generale e correzioni di errori di battitura.
