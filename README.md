@@ -73,71 +73,70 @@ Capitalizza in modo random le prime lettere di ogni sillaba in mezzo alle parole
 
 Ogni volta che le regole del linguaggio lo permettono, dai alle classi, ai costruttori, ai metod, ai nome dei campi, i parametri e le variabili locali gli stessi nomi. Per ottenere punti extra, riusa i nomi di variabili locali all'interno di blocchi `{}`. Lo scopo è di obbligare il manutentore ad esaminare attentamente lo scope di ogni istanza, In particolare, in Java, maschera i metodi ordinari da costruttori.
 
-#### Åccented Letters
+#### Lettere Åccentate
 
-Use accented characters on variable names. E.g.
+Usa le lettere accentate nei nomi delle variabili es:
 
 ```c
 typedef struct { int i; } ínt;
 ```
 
-where the second ínt's í is actually i-acute. With only a simple text editor, it's nearly impossible to distinguish the slant of the accent mark.
+dove la seconda í di ínt è una i acuta. Con l'uso di un semplice editor di testo è quasi impossibile distinguere l'accento dal puntino.
 
-#### Exploit Compiler Name Length Limits
+#### Sfrutta I Limiti Di Lunghezza Dei Nomi Del Compilatore
 
-If the compiler will only distinguish the first, say, 8 characters of names, then vary the endings e.g. `var_unit_update()` in one case and `var_unit_setup()` in another. The compiler will treat both as `var_unit`.
+Se il compilatore distingue solo, per esempio, le prime 8 lettere dei nomi, allora cambia la fine delle parole es: `var_unit_update()` in un caso e `var_unit_setup()` in un altro.
 
-#### Underscore, a Friend Indeed
+#### Underscore, un vero amico
 
-Use `_` and `__` as identifiers.
+Usa `_` e `__` come identificatori (nomi di variabile).
 
-#### Mix Languages
+#### Mescola i Linguaggi
 
-Randomly intersperse two languages (human or computer). If your boss insists you use his language, tell him you can organise your thoughts better in your own language, or, if that does not work, allege linguistic discrimination and threaten to sue your employers for a vast sum.
+Interseca casualmente due linguaggi (umano o di programmazione). Se il tuo capo insiste nell'usare il suo linguaggio, digli che riesci a organizzare i tuoi pensieri solo nel tuo linguaggio oppure, se questo non funziona, denuncialo per discriminazione linguistica e minaccialo di citare in giudizio i datori di lavoro per una grossa somma.
 
 #### Extended ASCII
 
-Extended ASCII characters are perfectly valid as variable names, including ß, Ð, and ñ characters. They are almost impossible to type without copying/pasting in a simple text editor.
+I caratteri Extended ASCII sono perfettamente validi come nome di variabili, incluse ß, Ð, and ñ. Sono quasi impossibili da digitare senza usare copia/incolla in un semplice editor di testo.
 
-#### Names From Other Languages
+#### Nomi Da Altri Linguaggi
 
-Use foreign language dictionaries as a source for variable names. For example, use the German _punkt_ for _point_. Maintenance coders, without your firm grasp of German, will enjoy the multicultural experience of deciphering the meaning.
+Usa nomi da lingue straniere come fonte per i nomi delle variabili. Per esempio, usa il Tedesco _punkt_ for _punto_. I manutentori non dotati della tua padronanza del tedesco,trarranno giovamento dalla esperienza multiculturale di decifrarne i significati.
 
-#### Names From Mathematics
+#### Nomi dalla Matematica
 
-Choose variable names that masquerade as mathematical operators, e.g.:
+Scegli i nomi delle variabili che si mascherano da operatori matematici es:
 
 ```js
 openParen = (slash + asterix) / equals;
 ```
 
-#### Bedazzling Names
+#### Nomi sbalorditivi
 
-Choose variable names with irrelevant emotional connotation. e.g.:
+Scegli nomi di variabili che hanno rilevanti connatazioni emozionali es:
 
 ```js
 marypoppins = (superman + starship) / god;
 ```
 
-This confuses the reader because they have difficulty disassociating the emotional connotations of the words from the logic they're trying to think about.
+Questo confonderà il lettore perchè avranno difficoltà nel separare le connotazioni emozionali delle parole dalla logica dell'algoritmo sottostante.
 
 
-#### Rename and Reuse
+#### Rinomina e Riusa
 
-This trick works especially well in Ada, a language immune to many of the standard obfuscation techniques. The people who originally named all the objects and packages you use were morons. Rather than try to convince them to change, just use renames and subtypes to rename everything to names of your own devising. Make sure to leave a few references to the old names in, as a trap for the unwary.
+Questo trucco funziona particolarmente bene in Ada, un linguaggio immune alle principali tecniche di offuscamento. Le persone  che originariamente diedero i nomi agli oggetti e ai pacchetti erano degli idioti. Invece di convincerli a cambiarli, usa semplicemente ridenominazioni e sottotipi per rinominare tutto con nomi di tua ideazione. Assicurati di lasciare alcuni riferimenti ai vecchi nomi, come trappola per gli incauti.
 
-#### When To Use i
+#### Quando usare i
 
-Never use `i` for the innermost loop variable. Use anything but `i`. Use `i` liberally for any other purpose especially for non-int variables. Similarly use `n` as a loop index.
+Non usare mai `i` per le variabili interne ai cicli. Usa qualsialsi altra lettera ma non `i`. Usa `i` liberamente per ogni altro scopo specialmente per variabili non int. Allo stesso modo usa `n` come indice dei loop.
 
 #### Conventions Schmentions
 
+Ignora i [Sun Java Coding Conventions](http://web.archive.org/web/20091003224540/http://java.sun.com/docs/codeconv/), dopo tutto, lo fa anche Sun. Per fortuna , il compilatore non si offenderà se violate quelle raccomandazioni. Lo scopo è di usare comunque nomi che differiscono solo leggermente dalle convenzioni. Se sei forzato a usare la capitalizzazione, puoi ancora sovvertirla dove questa scelta è ambigua es: use *both* _input**F**ile**n**ame_ and _input**f**ile**N**ame_. Inventa le tue convenzioni di denominazione irrimediabilmente complesse, quindi rimprovera tutti gli altri per non averle seguite.
 
-Ignore the [Sun Java Coding Conventions](http://web.archive.org/web/20091003224540/http://java.sun.com/docs/codeconv/), after all, Sun does. Fortunately, the compiler won't tattle when you violate them. The goal is to come up with names that differ subtly only in case. If you are forced to use the capitalisation conventions, you can still subvert wherever the choice is ambiguous, e.g. use *both* _input**F**ile**n**ame_ and _input**f**ile**N**ame_. Invent your own hopelessly complex naming conventions, then berate everyone else for not following them.
+#### La l minuscola Assomiglia un sacco alla cifra 1
 
-#### Lower Case l Looks a Lot Like the Digit 1
-
-Use lower case l to indicate long constants. e.g. `10l` is more likely to be mistaken for `101` than `10L` is. Ban any fonts that clearly disambiguate `uvw`, `wW`, `gq9`, `2z`, `5s`, `il17|!j`, `oO08`, `` `'" ``, `;,.`, `m nn rn`, and `{[()]}`. Be creative.
+Usa la l minuscola per indicare le constanti long es: `10l` è molto facile che sia scambiata per `101` invece di essere riconosciuta per `10L`. Vieta ogni font che distingue chiaramente `uvw`, `wW`, `gq9`, `2z`, `5s`, `il17|!j`, `oO08`, `` `'" ``, `;,.`, `m nn rn`, e `{[()]}`. Sii creativo.
 
 #### Reuse of Global Names as Private
 
