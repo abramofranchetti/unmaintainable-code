@@ -178,16 +178,16 @@ La notazione ungherese è l'arma nucleare tattica delle tecniche di offuscamento
 
  - Viola in modo palese il concetto Ungherese che i parametri delle funzioni e di altri simboli debbano avere nomi significativi, ma ricordati che i prefissi Ungheresi per se stessi possono diventare eccellenti nomi di variabili temporanee.
 
- - Insist on carrying outright orthogonal information in your Hungarian warts. Consider this real world example `a_crszkvc30LastNameCol`. It took a team of maintenance engineers nearly 3 days to figure out that this whopper variable name described a const, reference, function argument that was holding information from a database column of type Varchar[30] named "LastName" which was part of the table's primary key. When properly combined with the principle that "all variables should be public" this technique has the power to render thousands of lines of source code obsolete instantly!
+ - Insisti per portare a termine informazioni ortogonali nei prefissi ungheresi. Considera questo esempio del mondo reale `a_crszkvc30LastNameCol`. Un team di tecnici della manutenzione ha impiegato quasi 3 giorni per capire che questo nome di variabile enorme descriveva un argomento const, reference, funzione che conteneva informazioni da una colonna del database di tipo Varchar[30] denominata "LastName" che faceva parte della tabella chiave primaria. Se opportunamente combinata con il principio che "tutte le variabili dovrebbero essere pubbliche", questa tecnica ha il potere di rendere obsolete migliaia di righe di codice sorgente all'istante!
 
- - Use to your advantage the principle that the human brain can only hold 7 pieces of information concurrently. For example code written to the above standard has the following properties:
+ - Usa a tuo vantaggio il principio secondo il quale il cervello umano può trattenere in memoria solo 7 pezzi di informazione. Per esempio il codice scritto secondo gli standard di cui sopra ha queste proprietà:
 
-    * A single assignment statement carries 14 pieces of type and name information.
-    * A single function call that passes three parameters and assigns a result carries 29 pieces of type and name information.
-    * Seek to improve this excellent, but far too concise, standard. Impress management and coworkers by recommending a 5 letter day of the week prefix to help isolate code written on `Monam` and `FriPM`.
-    * It is easy to overwhelm the short term memory with even a moderately complex nesting structure, **especially** when the maintenance programmer can't see the start and end of each block on screen simultaneously.
+    * Una signola riga di assagnazione porta con se 14 pezzi di informazioni riguardo tipi e nomi
+    * Una singola chiamata a funzione che passa tre parametri e assenga un risulato porta 29 pezzi di informazioni riguardo tipi e nomi
+    * Certa di migliorare questo standard eccellente, ma veramente troppo conciso. Impressione il management e i collaboratori  consigliando un prefisso di 5 lettere del giorno della settimana per aiutare a isolare il codice scritto su `Monam` e `FriPM`.
+    * E' piuttosto semplice sopraffare la memoria a lungo termine con strutture moderatamente annidate, **specialmente** quando il programmatore manutentore non può vedere l'inizio e la fine di ogni blocco sullo stesso schermo simultaneamente. 
 
-#### Hungarian Notation Revisited
+#### Notazione Ungherese Rivisitata
 
 One follow-on trick in the Hungarian notation is "change the type of a variable but leave the variable name unchanged". This is almost invariably done in windows apps with the migration from Win16:
 
