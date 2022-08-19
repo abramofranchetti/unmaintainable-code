@@ -138,45 +138,45 @@ Ignora i [Sun Java Coding Conventions](http://web.archive.org/web/20091003224540
 
 Usa la l minuscola per indicare le constanti long es: `10l` è molto facile che sia scambiata per `101` invece di essere riconosciuta per `10L`. Vieta ogni font che distingue chiaramente `uvw`, `wW`, `gq9`, `2z`, `5s`, `il17|!j`, `oO08`, `` `'" ``, `;,.`, `m nn rn`, e `{[()]}`. Sii creativo.
 
-#### Reuse of Global Names as Private
+#### Riuso dei Nomi Globali come Nomi Privati.
 
-Declare a global array in module A, and a private one of the same name in the header file for module B, so that it appears that it's the global array you are using in module B, but it isn't. Make no reference in the comments to this duplication.
+Dichiara un array globale nel modulo A, e un array privato con lo stesso nome nell'header del modulo B, così sembrerà che è lo stesso array globale che stai usando nel modulo B, ma non lo è. NOn fare alcun riferimento nei commenti a questa duplicazione.
 
-#### Recycling Revisited
+#### Riciclaggio Rivisitato
 
-Use scoping as confusingly as possible by recycling variable names in contradictory ways. For example, suppose you have global variables `A` and `B`, and functions `foo` and `bar`. If you know that variable `A` will be regularly passed to `foo` and `B` to `bar`, make sure to define the functions as `function foo(B)` and `function bar(A)` so that inside the functions `A` will always be referred to as `B` and vice versa. With more functions and globals, you can create vast confusing webs of mutually contradictory uses of the same names.
+Usa lo scoping nel modo più confusionario possibile, reciclando i nomi delle variabili in modo contraddittorio. Per esempio supponi di avere una variabile `A` e una `B`, e delle funzioni `foo` e `bar`. Se sai che la variabile `A` sarà di solito passata a `foo` e la `B` a `bar`, assicurati di definire le funzioni come `function foo(B)` e `function bar(A)` così che dentro la funzione `A` sarà sempre chiamata `B` and vice versa. Con molte funzioni e variabili globali, puoi creare una vasta ragnatela di variabili mutualmente contraddittorie che usano gli stessi nomi.
 
-#### Recycle Your Variables
+#### Ricicla le tue variabili.
 
-Wherever scope rules permit, reuse existing unrelated variable names. Similarly, use the same temporary variable for two unrelated purposes (purporting to save stack slots). For a fiendish variant, morph the variable, for example, assign a value to a variable at the top of a very long method, and then somewhere in the middle, change the meaning of the variable in a subtle way, such as converting it from a 0-based coordinate to a 1-based coordinate. Be certain not to document this change in meaning.
+Ogni volta che le regole dello scope lo permettono, riusa nomi delle variabili che non centrano nulla. Allo stesso modo, usa variabili temporanee per due scopi non correlati. Per una variamente più amichevole, modifica la variabile, per esempio, assegna un valore alla variabile all'inizio di un metodo molto lungo, e da qualche parte nel mezzo, cambiaci signicifato in qualche modo sottile, come convertire da coordinate in base 0 a coordinate in base 1. Assicurati di non documentare questo cambio di significato.
 
 #### Cd wrttn wtht vwls s mch trsr
 
-When using abbreviations inside variable or method names, break the boredom with several variants for the same word, and even spell it out longhand once in while. This helps defeat those lazy bums who use text search to understand only some aspect of your program. Consider variant spellings as a variant on the ploy, e.g. mixing International _colour_, with American _color_ and dude-speak _kulerz_. If you spell out names in full, there is only one possible way to spell each name. These are too easy for the maintenance programmer to remember. Because there are so many different ways to abbreviate a word, with abbreviations, you can have several different variables that all have the same apparent purpose. As an added bonus, the maintenance programmer might not even notice they are separate variables.
+Quando usi le abbreviazioni dentro i nomi di variabili o metodi, rompi la noia con molte varianti della stessa parola, e ogni tanto scrivila per intero. Questo aiuta a sconfiggere i pigroni che usano le ricerca testuale per comprendere solo alcuni aspetti del tuo programma. Considera le varianti nello spelling come varianti dello stratagemma es: mescola International _colour_, con l'americano _color_ e il più colorito _kulerz_. Se scrivi i nomi per intero, c'è un solo modo per scrivere ogni nome. Questo rende troppo semplice per i manutentori ricordarsi le cose. Ma dato che ci sono così tanti modi di abbrviare una parola, con le abbreviazioni, puoi avere molte diverse variabili che hanno tutte lo stesso significato apparente. Come bonus aggiunto, il manutentore potrebbe anche non accorgersi che sono variabili diverse.
 
-#### Misleading names
+#### Nomi Ingannevoli
 
-Make sure that every method does a little bit more (or less) than its name suggests. As a simple example, a method named `isValid(x)` should as a side effect convert `x` to binary and store the result in a database.
+Assicurati che ogni metodo faccia qualcosian in più (o in meno) di quello che il suo nome suggerisce. Ad esempio, un metodo chiamato `isValid(x)` dovrebbe, come side effect, convertire `x` in binario e salvare il risultato su un database.
 
 #### m_
 
-a naming convention from the world of C++ is the use of `m_` in front of members. This is supposed to help you tell them apart from methods, so long as you forget that "method" also starts with the letter "m".
+Una naming convention che si usa nel mondo del C++ è quella di usare una `m_` davanti ai nomi dei membri. Questo dovrebbe aiutarti a distinguerli dai metodi, almeno fino a che non ti ricordi che "metodo" inizia a sua volta con la lettera "m"
 
 #### o_apple obj_apple
 
-Use an "o" or "obj" prefix for each instance of the class to show that you're thinking of the big, polymorphic picture.
+Usa una "o" o "obj" come prefisso per goni istanza di una classe per mostrare che hai in mente un grande progetto polimorfico.
 
-#### Hungarian Notation
+#### Notazione Ungherese
 
-Hungarian Notation is the tactical nuclear weapon of source code obfuscation techniques; use it! Due to the sheer volume of source code contaminated by this idiom nothing can kill a maintenance engineer faster than a well planned Hungarian Notation attack. The following tips will help you corrupt the original intent of Hungarian Notation:
+La notazione ungherese è l'arma nucleare tattica delle tecniche di offuscamento del codice; usala! Grazie al gigantesco volume di codice sorgente contiminato da questo idioma niente può ammazzare un ingegnere manutentore più velocemente che un attacco Notazione Ungherese ben pianificato. I seguenti suggerimenti ti aiuteranno a corrompere gli scopi originari della Notazione Ungherese:
 
- - Insist on using "c" for const in C++ and other languages that directly enforce the const-ness of a variable.
+ - Insisti ad usare "c" per le costanti in C++ e degli altri linguaggi che impongono direttamente la non-constanza di una variabile.
 
- - Seek out and use Hungarian warts that have meaning in languages other than your current language. For example, insist on the PowerBuilder `l_` and `a_` {local and argument} scoping prefixes and always use the VB-esque style of having a Hungarian wart for every control type when coding to C++. Try to stay ignorant of the fact that megs of plainly visible MFC source code do not use Hungarian warts for control types.
+ - Ricerca e usa i prefissi della Notazione Ungherese che hanno significati in linguaggi diversi da quello che stai usando ora. Per esempio continua ad usare i prefissi `l_` e `a_` {local and argument} e usa sempre lo stile VB  di avere dei prefissi Ungheresi per ogni tipo di controllo quando programmi in C++. Cerca di ignorare il fatto che megabyte di codice sorgente MFC non usa i prefissi Ungheresi nei tipi di controllo.
 
- - Always violate the Hungarian principle that the most commonly used variables should carry the least extra information around with them. Achieve this end through the techniques outlined above and by insisting that each class type have a custom wart prefix. Never allow anyone to remind you that **no** wart tells you that something **is** a class. The importance of this rule cannot be overstated if you fail to adhere to its principles the source code may become flooded with shorter variable names that have a higher vowel/consonant ratio. In the worst case scenario this can lead to a full collapse of obfuscation and the spontaneous reappearance of English Notation in code!
+ - Viola sempre il principio Ungherese secondo il quale le variabili usate comunemente dovrebbero portarsi dietro il minor numero di informazioni extra. Ottieni questo scopo attraverso le tecniche discusse sopra e continunando a fare in modo che ogni classe abbia un prefisso Ungherese personalizzato. Non permettere a nessuno di ricordarti che **nessun** prefisso ti dice che qualcosa **è** una classe. L'importanza di questa regola non può essere sopravvalutata se non si rispettano i suoi principi, il codice sorgente potrebbe essere invaso da nomi di variabili più brevi che hanno un rapporto vocale/consonante più elevato. Nel peggiore dei casi ciò può portare a un completo collasso dell'offuscamento e alla ricomparsa spontanea della notazione inglese nel codice!
 
- - Flagrantly violate the Hungarian-esque concept that function parameters and other high visibility symbols must be given meaningful names, but that Hungarian type warts all by themselves make excellent temporary variable names.
+ - Viola in modo palese il concetto Ungherese che i parametri delle funzioni e di altri simboli debbano avere nomi significativi, ma ricordati che i prefissi Ungheresi per se stessi possono diventare eccellenti nomi di variabili temporanee.
 
  - Insist on carrying outright orthogonal information in your Hungarian warts. Consider this real world example `a_crszkvc30LastNameCol`. It took a team of maintenance engineers nearly 3 days to figure out that this whopper variable name described a const, reference, function argument that was holding information from a database column of type Varchar[30] named "LastName" which was part of the table's primary key. When properly combined with the principle that "all variables should be public" this technique has the power to render thousands of lines of source code obsolete instantly!
 
